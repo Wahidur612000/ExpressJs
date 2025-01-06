@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Express Js Node Js PUG</title>
-    style include ../static/style.css
+    style 
+        include ../static/style.css
   </head>
   <body>
     <nav>
@@ -17,33 +18,11 @@
     <div class="container">
       <h1>#{content}</h1>
       <form action="/" method="post" id="contact">
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-        />
-        <input type="text" name="age" id="age" placeholder="Enter your age" />
-        <input
-          type="text"
-          name="gender"
-          id="gender"
-          placeholder="Enter your gender"
-        />
-        <textarea
-          name="address"
-          id="address"
-          cols="30"
-          rows="10"
-          placeholder="Enter your address"
-        ></textarea>
-        <textarea
-          name="more"
-          id="more"
-          cols="30"
-          rows="10"
-          placeholder="More about you.."
-        ></textarea>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="number" name="age" id="age" placeholder="Enter your age">
+        <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+        <textarea name="more" id="more" cols="30" rows="10" placeholder="More about you.."></textarea>
         <button class="btn">Submit</button>
       </form>
     </div>
